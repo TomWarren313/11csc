@@ -3,16 +3,19 @@ goal_time = 50
 flag = True
 held_times = []
 def get_data():
-      try:
-        time = input('How long did you run for? ')
-        time = int(time)
-        if time > 0:
-            held_times.append(time)
-      except ValueError:
-        print('Im sorry but what you entered is invalid! Try Again.')
-      return time
+    while flag:
+        try:
+            time_input = input('How long did you run for? ')
+            run_time = int(time_input)
+            if run_time > 0:
+                held_times.append(run_time)
+                return run_time
+            else:
+                print('Please enter a number greater than 0.')
+        except ValueError:
+            print('I am sorry, but what you entered is invalid! Try Again. ')
 
-flag2 = False
+flag2 = True
 while flag2:
     run_time = get_data()
 
@@ -22,7 +25,7 @@ while flag2:
 
     if run_time >= goal_time:
       print('You reached your goal!!!')
-      flag2 = True
+      flag2 = False
 
 print('Recording ended.')
 
