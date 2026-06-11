@@ -20,9 +20,9 @@ while flag:
     if my_time >= goal_time:
       print('You reached your goal!!!')
       flag = False
-
+    
   except ValueError:
-    flag = False
+    print('Sorry this will not work, please enter a new number!')
 print('Recording ended.')
 
 if len(held_times) == 0:
