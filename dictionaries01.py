@@ -14,7 +14,6 @@ for i in range(5):
     
     haircut[key] = value
 
-
+#printing k
 for key,value in haircut.items():
-    if value == True:
-        print(key, 'needs a haircut')
+    print((key), 'has', len(key), 'characters')
