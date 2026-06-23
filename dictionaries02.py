@@ -1,3 +1,6 @@
+'''Python program that makes the user enter a car brand in a while loop until the user enters nothing,
+it then prints out all the car brands entered and how much times they have been entered. It does this via a dictionary
+'''
 #function to get data
 def getData():
     car = input('Please enter a car brand: ').title()
