@@ -1,27 +1,32 @@
-def get_data(car_brands):
-    car = input('Please enter a car brand: ').title()
+'''
+Function that gets user data
+'''
+def getData(car_brand):
+    car = input('car brand: ').title()
     if car != '':
-        if car in car_brands:
-            car_brands[car] += 1
+        if car in car_brand:
+            car_brand[car] += 1
         else:
-            car_brands[car] = 1
-    return car  # Returns the car name so we can check if it's empty
-
+            car_brand[car] = 1
+    return car 
+'''
+Function that proccesses
+'''
 def processing():
-    car_brands = {}
-    while True:
-        # Pass the dictionary into get_data so it gets updated
-        new_car = get_data(car_brands)
+    car_brand = {}
+    flag = True
+    while flag:
+        new_car = getData(car_brand)
         if new_car == '':
-            break
-    return car_brands
-
+            flag = False
+    return car_brand
+'''
+Function that outputs
+'''
 def output(my_car_brands):
-    # Loop over the dictionary passed as a parameter
+    # Loops
     for key, value in my_car_brands.items():
         print(key, 'has been entered', value, 'time(s)')
-
-# Main Routine
-# Create the dictionary here, then pass it through the functions
-final_brands = processing()
-output(final_brands)
+#main routine
+f_brands = processing()
+output(f_brands)
