@@ -1,3 +1,7 @@
+'''
+This program uses a dictionary to sort out student averages. It will then print them all out
+'''
+
 def getData():
     flag = True
     while flag:
@@ -29,4 +33,4 @@ def processing():
 # Main routine
 output = processing()
 for key, value in output.items():
-    print(key, 'attendance is', value)
+    print(key, 'attendance is', f"{value}%")
