@@ -67,10 +67,3 @@ h1 {
 img {
   border: 4px solid #f891e7;
 }
-.carousel-container {
-    max-width: 50px;
-    max-height: 50px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-}
