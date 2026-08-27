@@ -1,5 +1,5 @@
 body{
-    background-color: #FDFDFD;
+    background-color: #FCFCFC;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body{
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #F7567C;
     padding: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
@@ -30,7 +30,7 @@ body{
 }
 
 .nav-link:hover {
-    background-color: #555;
+    background-color: #bc68ec;
 }
 
 .nav-link.active {
@@ -66,4 +66,11 @@ h1 {
 
 img {
   border: 4px solid #f891e7;
+}
+.carousel-container {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
 }
